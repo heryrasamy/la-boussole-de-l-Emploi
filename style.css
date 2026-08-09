@@ -2178,4 +2178,72 @@ header {
         z-index: 1;
     }
 } 
+/* ========================= */
+/* ACCUEIL — HERO MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 34px 24px 38px !important;
+        gap: 26px !important;
+
+        box-sizing: border-box !important;
+        text-align: center !important;
+    }
+
+    .hero-right {
+        display: block !important;
+        order: 1 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-left {
+        display: flex !important;
+        order: 2 !important;
+
+        width: 100% !important;
+    }
+
+    .hero-right h1 {
+        margin-bottom: 18px !important;
+
+        font-size: 40px !important;
+        line-height: 1.08 !important;
+    }
+
+    .hero-right p {
+        margin-bottom: 24px !important;
+
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+    }
+
+    .hero-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+        gap: 12px !important;
+    }
+
+    .hero-buttons a {
+        width: 100% !important;
+
+        box-sizing: border-box !important;
+        justify-content: center !important;
+    }
+
+    .compass {
+        width: 190px !important;
+        margin: 0 auto !important;
+    }
+}
 }
