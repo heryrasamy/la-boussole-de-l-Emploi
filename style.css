@@ -1789,6 +1789,151 @@ header {
     font-weight: 400;
 }
 
+/* ========================= */
+/* RUBRIQUE VOTRE AVIS */
+/* ========================= */
+
+.feedback-section {
+    width: 100%;
+    padding: 0 32px 96px;
+
+    font-family: Arial, sans-serif;
+}
+
+.feedback-card {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    padding: 58px 48px;
+
+    border-radius: 26px;
+
+    background: linear-gradient(
+        135deg,
+        #4e30cd 0%,
+        #3926ff 55%,
+        #0a2e85 100%
+    );
+
+    color: #ffffff;
+    text-align: center;
+
+    box-shadow: 0 20px 48px rgba(19, 26, 102, 0.18);
+}
+
+.feedback-label {
+    margin: 0 0 14px;
+
+    color: #ddd8ff;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.feedback-card h2 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(32px, 4vw, 44px);
+    line-height: 1.15;
+}
+
+.feedback-card > p:not(.feedback-label):not(.feedback-note) {
+    max-width: 720px;
+    margin: 0 auto 30px;
+
+    color: #f2f0ff;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.feedback-button {
+    min-height: 52px;
+    padding: 0 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+
+    background: #ffffff;
+    color: #3023e6;
+
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.feedback-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+.feedback-note {
+    margin: 18px 0 0;
+
+    color: #ddd8ff;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* ========================= */
+/* RUBRIQUE VOTRE AVIS — MOBILE */
+/* ========================= */
+
+@media (max-width: 850px) {
+
+    .feedback-section {
+        padding: 0 16px 64px;
+    }
+
+    .feedback-card {
+        padding: 40px 22px;
+        border-radius: 20px;
+    }
+
+    .feedback-label {
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+
+    .feedback-card h2 {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.18;
+    }
+
+    .feedback-card > p:not(.feedback-label):not(.feedback-note) {
+        margin-bottom: 26px;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .feedback-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 0 20px;
+    }
+
+    .feedback-note {
+        margin-top: 16px;
+        font-size: 13px;
+    }
+}
 
 /* ========================= */
 /* GUIDE RESPONSIVE */
